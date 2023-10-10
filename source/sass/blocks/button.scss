@@ -1,0 +1,17 @@
+.button{
+  border: none;
+  padding: 8px 20px 8px 20px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.button__submit{
+background-color: $color-primary;
+color: $color-white;
+margin-bottom: 10px
+};
+
+.button__reset{
+  color: $color-primary;
+  background-color: $color-white;
+}

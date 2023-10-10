@@ -1,0 +1,21 @@
+.input-range{
+  border: 2px solid $color-primary;
+  border-radius: 4px;
+  padding: 8px 10px;
+  background-color: $color-white;
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.input-range--min::after{
+  display: block;
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 34px;
+}

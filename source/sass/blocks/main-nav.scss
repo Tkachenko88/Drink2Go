@@ -1,0 +1,13 @@
+.main-nav__list {
+    list-style-type: none;
+}
+
+.main-nav__toggle{
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,38 @@
+.advantages-item{
+  padding-top: 60px;
+}
+
+.advantages-item--speed{
+  background: url('/images/speed.svg') no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 10%;
+}
+
+.advantages-item--convenience{
+  background: url("/images/convenience.svg") no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 10%;
+}
+
+.advantages-item--cheerfulness{
+  background: url("/images/cheerfulness.svg") no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 10%;
+}
+
+.advantages-item--ecology{
+  background: url("/images//ecology.svg") no-repeat;
+  background-size: 52px 56px;
+  background-position: 50% 10%;
+}
+
+.advantages-item__title{
+font-size: 18px;
+line-height: 32px;
+};
+
+.advantages-item__description{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}

@@ -1,0 +1,33 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(0, 247, 255);
+  min-height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+fieldset{
+  border: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1200px;
+  }
+}
