@@ -1,0 +1,17 @@
+.contacts-item{
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    display: block;
+    position: relative;
+}
+
+.contacts-item__description{
+  margin: 0;
+}
+
+.contacts-item__icon{
+  position: absolute;
+  top: 0;
+  left: -16px;
+}

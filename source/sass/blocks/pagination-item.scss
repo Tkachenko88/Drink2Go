@@ -1,0 +1,13 @@
+.pagination-item{
+  color: $color-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: $color-white;
+  padding: 8px 16px;
+}
+
+.pagination-item__link--current{
+  font-weight: 600;
+  color:$color-black ;
+}

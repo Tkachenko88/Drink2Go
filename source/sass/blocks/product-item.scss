@@ -1,7 +1,8 @@
 .product-item{
   padding: 20px;
   text-align: left;
-
+  background-color: $color-white;
+  margin-bottom: 20px;
 }
 
 .product-item__title{
@@ -20,6 +21,6 @@
   margin: 0;
   font-size: 14px;
   line-height: 20px;
-  width: 238px;
+  width: 235px;
   padding-bottom: 4px;
 }

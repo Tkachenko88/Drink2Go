@@ -1,0 +1,17 @@
+.shop{
+  text-align: left;
+  padding: 20px 20px 0 20px;
+  position: relative;
+
+}
+
+.shop::after{
+  content: "";
+  width: 320px;
+  height: 1px;
+  display: block;
+  background-color: $color-secondary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

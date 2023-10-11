@@ -1,0 +1,21 @@
+.catalog-pagination{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.catalog-pagination::before{
+  content: "";
+  background: url("/images/arrow-left.svg") no-repeat;
+  display: block;
+  width: 10px;
+  margin-top: 14px;
+ }
+
+.catalog-pagination::after{
+  content: "";
+  background: url("/images/arrow-right.svg") no-repeat;
+  display: block;
+  width: 10px;
+  margin-top: 14px;
+}
