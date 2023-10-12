@@ -1,0 +1,9 @@
+.checkbox-input{
+  position: absolute;
+  appearance: none;
+
+}
+
+.checkbox-input:checked + .checkbox-mark{
+  background-image: url("/images/checkbox-checked.svg");
+}

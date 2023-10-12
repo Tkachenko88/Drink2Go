@@ -1,0 +1,26 @@
+.hero-slider{
+  position: relative;
+}
+
+.hero-slider__button{
+  display: flex;
+  width: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: $flat-white;
+  cursor: pointer;
+}
+
+.hero-slider__button--previous{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hero-slider__button--next{
+  position: absolute;
+  right: 0;
+  top: 0;
+}

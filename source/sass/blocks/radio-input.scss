@@ -1,0 +1,8 @@
+.radio-input{
+  position: absolute;
+  appearance: none;
+}
+
+.radio-input:checked + .radio-mark{
+  background: url("/images/radio-checked.svg") no-repeat;
+}

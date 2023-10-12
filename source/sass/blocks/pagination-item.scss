@@ -4,10 +4,20 @@
   font-weight: 400;
   line-height: 24px;
   background-color: $color-white;
-  padding: 8px 16px;
+  padding: 8px 17px;
+  border-radius: 4px;
 }
 
-.pagination-item__link--current{
+.pagination-item:first-child{
+  padding: 8px 14px;
+}
+
+.pagination-item:last-child{
+  padding: 8px 14px;
+}
+
+.pagination-item--current{
   font-weight: 600;
   color:$color-black ;
+  background-color: $background-grey ;
 }

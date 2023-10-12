@@ -5,6 +5,7 @@
 }
 
 .catalog-sorting__select{
+  font-family: $font;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -12,4 +13,5 @@
   border: none;
   padding: 4px 0 4px 10px;
   width: 165px;
+  background-color: $background-grey;
 }

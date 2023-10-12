@@ -13,9 +13,9 @@ line-height: 16px;
 
 .hero-card__name{
   font-weight:700;
-font-size: 36px;
-line-height: 48px;
-margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0;
 
 }
 
@@ -32,23 +32,6 @@ margin: 0;
   justify-content: space-around;
 }
 
-.hero-card__price{
-  line-height: 32px;
-
-  &--old{
-    text-decoration: line-through;
-    color: $color-primary;
-    font-size: 16px;
-
-  }
-
-  &--new{
-
-    font-size: 20px;
-
-  }
-};
-
 .hero-card__button{
   background-color: $color-primary;
   border-radius: 4px;
@@ -57,4 +40,5 @@ margin: 0;
   font-size: 16px;
   line-height: 24px;
   color: $color-white;
+  cursor: pointer;
 }
