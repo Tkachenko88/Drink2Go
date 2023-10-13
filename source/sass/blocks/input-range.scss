@@ -9,13 +9,18 @@
   box-sizing: border-box;
 }
 
-.input-range--min::after{
-  display: block;
-  content: "";
-  width: 8px;
-  height: 2px;
-  background-color: red;
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 34px;
+.input-range--min{
+  margin-right: 18px;
+}
+
+.input-range--max{
+  margin-left: 21px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .input-range{
+    width: 87px;
+
+  }
 }

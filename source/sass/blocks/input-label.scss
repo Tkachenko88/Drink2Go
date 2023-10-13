@@ -1,0 +1,16 @@
+.input-label:first-child:after{
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: $color-grey;
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 136px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-label:first-child:after{
+     left: 106px;
+  }
+}

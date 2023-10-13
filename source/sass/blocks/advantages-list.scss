@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 50px 20px;
+  }
+}

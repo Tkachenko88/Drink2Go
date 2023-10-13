@@ -1,7 +1,7 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 100%;
   min-height: 60px;
   box-sizing: border-box;
   position: relative;
@@ -10,3 +10,10 @@
 .main-header__logo{
   padding: 8px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header{
+    width: 768px;
+     }
+}
+

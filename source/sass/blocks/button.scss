@@ -1,19 +1,28 @@
 .button{
   font-family: $font;
   border: none;
-  padding: 8px 20px 8px 20px;
+  padding: 12px 20px ;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .button__submit{
-background-color: $color-primary;
-color: $color-white;
-margin-bottom: 10px
+  background-color: $color-primary;
+  color: $color-white;
+  margin-bottom: 10px
 };
 
 .button__reset{
   color: $color-primary;
   background-color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+.button{
+  width: 137px;
+}
+.button__submit{
+   margin: 0;
+};
 }

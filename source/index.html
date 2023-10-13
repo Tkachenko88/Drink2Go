@@ -83,12 +83,19 @@
             </button>
         </div>
           <div class="hero-slider__container">
-            <div class="hero-card hero-card--active">
-              <img
-                class="hero-card__img "
-                src="/images/mobile/flat-white.png"
-                alt="flat-white photo"
-              />
+            <div class="hero-card hero-card--active hero-card--flat">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  /images/tablet/flat_white_img.png 1x,
+                  /images/tablet/flat_white_img@2x.png 2x">
+                 <img
+                  class="hero-card__img "
+                  src="/images/mobile/flat-white.png"
+                  srcset="/images/mobile/flat-white2x.png 2x"
+                  alt="flat-white photo" />
+              </picture>
               <span class="hero-card__new">Новинка!</span>
               <h2 class="hero-card__name">Декаф Флэт Уайт</h2>
               <p class="hero-card__description">
@@ -104,12 +111,20 @@
                 <button class="hero-card__button" >Заказать</button>
               </div>
             </div>
-            <div class="hero-card">
+            <div class="hero-card hero-card--latte">
+              <picture>
+              <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  /images/tablet/latte.png 1x,
+                  /images/tablet/latte@2x.png 2x">
               <img
                 class="hero-card__img "
                 src="/images/mobile/lavender.png"
+                srcset="/images/mobile/lavender2x.png 2x"
                 alt="lavender latte photo"
               />
+            </picture>
               <span class="hero-card__new">Новинка!</span>
               <h2 class="hero-card__name">Лавандовый Латте</h2>
               <p class="hero-card__description">
@@ -123,12 +138,20 @@
                 <button class="hero-card__button" >Заказать</button>
               </div>
             </div>
-            <div class="hero-card ">
-              <img
-                class="hero-card__img"
-                src="/images/mobile/espresso.png"
-                alt="Espresso photo"
-              />
+            <div class="hero-card hero-card--espresso">
+              <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                    /images/tablet/espresso.png 1x,
+                    /images/tablet/espresso@2x.png 2x">
+                  <img
+                    class="hero-card__img"
+                    src="/images/mobile/espresso.png"
+                    srcset="/images/mobile/espresso2x.png 2x"
+                    alt="Espresso photo"
+                  />
+              </picture>
               <span class="hero-card__new">Новинка!</span>
               <h2 class="hero-card__name">Тройной Эспрессо</h2>
               <p class="hero-card__description">
@@ -188,6 +211,7 @@
         <span class="catalog__text">Каталог</span>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="catalog-filter__wrapper">
           <fieldset class="catalog-filter__group">
             <legend class="catalog-filter__title">Цена</legend>
               <div class="catalog-filter__range range">
@@ -282,6 +306,7 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
             <div class="catalog-filter__button">
               <button class="button button__submit" type="submit">Применить</button>
               <button class="button button__reset" type="reset">Сбросить</button>

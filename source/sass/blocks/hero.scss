@@ -1,11 +1,12 @@
 .hero {
-  background-color: $flat-white;
+  min-height: 656px;
+  box-sizing: border-box;
 }
 
-.hero-card__img{
-  background-color: $flat-white;
-}
 
-.hero-card__wrapper{
-  padding-bottom: 60px;
+@media (min-width: $tablet-width) {
+  .hero{
+    width: 768px;
+    padding-bottom: 188px;
+  }
 }

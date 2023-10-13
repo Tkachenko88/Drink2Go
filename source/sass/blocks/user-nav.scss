@@ -6,8 +6,19 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
 }
 
 .user-nav__item{
   padding: 20px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav{
+    margin-right: 20px;
+  }
+
+  .user-nav__item{
+    padding: 28px 22px;
+  }
 }

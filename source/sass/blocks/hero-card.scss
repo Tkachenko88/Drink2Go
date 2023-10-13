@@ -1,23 +1,35 @@
 .hero-card{
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   background-color: $flat-white;
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
   box-sizing: border-box;
   position: absolute;
+
 
   &--active{
     z-index: 2;
   }
 
+  &--latte{
+    background-color: $color-latte;
+  }
+
+  &--espresso{
+    background-color: $color-espresso;
+  }
 }
 
+.hero-card__wrapper{
+  padding-bottom: 60px;
+}
 
 .hero-card__new{
-color: $color-primary;
-font-weight:700;
-font-size: 12px;
-line-height: 16px;
+  color: $color-primary;
+  font-weight:700;
+  font-size: 12px;
+  line-height: 16px;
 };
 
 .hero-card__name{
@@ -50,4 +62,36 @@ line-height: 16px;
   line-height: 24px;
   color: $color-white;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-card__img{
+    position: absolute;
+    top: 352px;
+    left: 146px;
+  }
+
+  .hero-card{
+    padding: 60px 80px;
+
+  };
+
+  .hero-card__name{
+    font-size: 56px;
+    line-height: 80px
+  }
+
+  .hero-card__description{
+    font-size: 20px;
+    line-height: 32px
+  }
+
+  .hero-card__wrapper{
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .hero-card__price{
+    padding-right: 20px;
+  }
 }

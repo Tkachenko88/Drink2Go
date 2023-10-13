@@ -20,3 +20,15 @@
   line-height: 36px;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog{
+    width: 768px;
+    padding-top: 80px;
+  }
+
+  .catalog__title{
+    font-size: 42px;
+    line-height: 64px;
+  }
+}

@@ -16,3 +16,10 @@
     line-height: 36px;
     margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+  width: 768px;
+  }
+
+}
