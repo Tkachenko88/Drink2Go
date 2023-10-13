@@ -12,3 +12,10 @@
     gap: 50px 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-list{
+    justify-content: space-around;
+    text-align: center;
+  }
+}

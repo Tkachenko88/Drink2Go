@@ -10,3 +10,8 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero{
+    padding-bottom: 0;
+  }
+}

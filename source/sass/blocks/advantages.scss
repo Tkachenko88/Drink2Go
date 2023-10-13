@@ -1,9 +1,9 @@
 .advantages{
-  margin: 30px 20px 20px 20px ;
+  margin: 44px 20px 93px;
 }
 
 .advantages__text{
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   font-weight: 700;
   color: $color-primary;
@@ -21,5 +21,12 @@
   .advantages {
   width: 768px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1440px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }

@@ -44,3 +44,9 @@
     width: 80px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-slider__container{
+    min-height: 714px;
+  }
+}

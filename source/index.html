@@ -96,17 +96,16 @@
               <button class="button-slider button-slider--active"></button>
               <button class="button-slider"></button>
               <button class="button-slider"></button>
-
             </div>
-
-
-
-
-
         </div>
           <div class="hero-slider__container">
             <div class="hero-card hero-card--active hero-card--flat">
               <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                  /images/desktop/flat_white_img.png 1x,
+                  /images/desktop/flat_white_img@2x.png 2x">
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -135,6 +134,11 @@
             </div>
             <div class="hero-card hero-card--latte">
               <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                  /images/desktop/latte.png 1x,
+                  /images/desktop/latte@2x.png 2x">
               <source
                   media="(min-width: 768px)"
                   srcset="
@@ -162,6 +166,11 @@
             </div>
             <div class="hero-card hero-card--espresso">
               <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                  /images/desktop/espresso_img.png 1x,
+                  /images/desktop/espresso_img@2x.png 2x">
                 <source
                     media="(min-width: 768px)"
                     srcset="
@@ -249,7 +258,7 @@
             </fieldset>
             <fieldset class="catalog-filter__group input">
               <legend class="catalog-filter__title">Наличие молока</legend>
-              <ul class="input-list">
+              <ul class="input-list input-list--milk">
                 <li class="input-item">
                   <label class="radio-item__control radio">
                     <input class="radio-input" type="radio" name="milk" value="random" checked>
@@ -282,7 +291,7 @@
             </fieldset>
             <fieldset class="catalog-filter__group input">
               <legend class="catalog-filter__title">Страна произрастания</legend>
-              <ul class="input-list">
+              <ul class="input-list input-list--country">
                 <li class="input-item">
                   <label class="input-item__control checkbox">
                     <input class="checkbox-input" type="checkbox" name="Brasil" checked>
@@ -322,7 +331,7 @@
             </fieldset>
           </div>
             <div class="catalog-filter__button">
-              <button class="button button__submit" type="submit">Применить</button>
+              <button class="button button__submit" type="submit" href="https://echo.htmlacademy.ru" >Применить</button>
               <button class="button button__reset" type="reset">Сбросить</button>
             </div>
         </form>
@@ -343,7 +352,7 @@
             </p>
             <div class="product-item__wrapper order">
               <span class="order-price">225&#8381</span>
-              <button class="order-button">
+              <button class="order-button" type="button">
                 <svg class="order-button__img" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 20 16"><path fill="#fff" fill-rule="evenodd" d="M13.67 13.52v-.02h1.35l-.03.21A2.67 2.67 0 0 1 12.35 16h-8.7A2.67 2.67 0 0 1 1 13.71L.19 8 0 6.67h4.55l-.22-2.68A3.68 3.68 0 0 1 11.62 3h-1.37a2.35 2.35 0 0 0-4.59.88l.23 2.79H9.5V8H6.06l.22 2.67h3.44l.01-.17h1.34l-.01.17h1.44V12h-1.55l-.23 2.67h1.63c.67 0 1.23-.5 1.32-1.15ZM4.72 8H1.54l.38 2.67h3.02L4.72 8Zm1.9 6.67L6.38 12H9.6l-.22 2.67H6.6ZM5.04 12l.23 2.67H3.65c-.67 0-1.23-.5-1.32-1.15L2.1 12h2.94Zm10.75-2V7.2H13V5.8h2.8V3h1.4v2.8H20v1.4h-2.8V10h-1.4Z" clip-rule="evenodd"/></svg>
                 <span class="order-button__text">В корзину</span>
               </button>

@@ -1,0 +1,14 @@
+.button-container {
+   display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .button-container {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 619px;
+    z-index: 2;
+  }
+}
+

@@ -1,16 +1,18 @@
 .button{
   font-family: $font;
   border: none;
-  padding: 12px 20px ;
+  padding: 8px 20px ;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 24px
 }
 
 .button__submit{
   background-color: $color-primary;
   color: $color-white;
-  margin-bottom: 10px
+  margin-bottom: 19px
 };
 
 .button__reset{
@@ -28,21 +30,6 @@
 }
 
 
-.button-slider{
-  width: 30px;
-  height: 5px;
-  background-color: red;
-  border: none;
 
-  &--active{
-    background-color: aqua;
-  }
-}
 
-.button-container{
-  position: absolute;
-  top: 500px;
-  left: 500px;
-  z-index: 3;
-}
 

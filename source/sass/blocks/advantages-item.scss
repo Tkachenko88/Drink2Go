@@ -27,14 +27,18 @@
 }
 
 .advantages-item__title{
-font-size: 18px;
-line-height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 16px;
+  margin-bottom: 6px;
 };
 
 .advantages-item__description{
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,4 +58,13 @@ line-height: 32px;
     font-size: 16px;
     line-height: 24px;
    }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-item{
+    padding: 0;
+    padding-top: 60px;
+    background-position: 50% 10%;
+    width: 318px;
+  }
 }

@@ -1,7 +1,8 @@
 .catalog-pagination{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {

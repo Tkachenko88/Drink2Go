@@ -1,0 +1,10 @@
+.button-slider{
+  width: 62px;
+  height: 4px;
+  background-color: $color-white;
+  border: none;
+
+  &--active{
+    background-color: $color-primary;
+  }
+}
