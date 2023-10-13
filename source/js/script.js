@@ -68,23 +68,38 @@ buttons.forEach((button, index) => {
   })
 })
 
-console.log(noUiSlider)
+
+const slider = document.querySelector('.range');
+const inputMin = document.querySelector('.input-range--min');
+const inputMax = document.querySelector('.input-range--max');
+const inputs = [inputMin, inputMax];
+
+noUiSlider.create(slider, {
+    start: [0, 900],
+  connect: true,
+  step: 1,
+  format: {
+    to: function (value) {
+      if (Number.isInteger(value)) {
+        return value.toFixed(0);
+      }
+      return value.toFixed(0);
+    },
+    from: function (value) {
+      return parseFloat(value);
+    },
+  },
+    range: {
+        'min': 0,
+        'max': 1000
+    }
+});
+
+slider.noUiSlider.on('update', (values, handle) => {
+  inputs[handle].value=values[handle]
+} )
 
 
 
 
 
-
-
-
-// //range slider
-// var slider = document.querySelector('.range-bar');
-
-// noUiSlider.create(slider, {
-//     start: [20, 80],
-//     connect: true,
-//     range: {
-//         'min': 0,
-//         'max': 100
-//     }
-// });
