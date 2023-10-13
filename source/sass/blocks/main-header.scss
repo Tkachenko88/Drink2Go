@@ -7,9 +7,13 @@
   position: relative;
 }
 
-.main-header__logo{
-  padding: 8px 20px;
+
+@media (max-width: $mobile-width-only) {
+  .main-header__logo{
+    padding: 12px 20px;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .main-header{
@@ -17,3 +21,8 @@
      }
 }
 
+@media (min-width: $desktop-width) {
+  .main-header{
+    width: 1440px;
+     }
+}

@@ -5,22 +5,27 @@ let header = document.querySelector(".main-nav");
 let navToggle = document.querySelector(".main-nav__toggle");
 let navList = document.querySelector(".site-list");
 
-// header.classList.remove("main-nav--nojs");
-
 navToggle.addEventListener("click", function () {
   navList.classList.toggle("site-list--closed");
+  navToggle.classList.toggle("main-nav__toggle--closed")
 });
+
+
+
 
 //hero-slider
 const prev = document.querySelector('.hero-slider__button--previous');
 const next = document.querySelector('.hero-slider__button--next');
 const cards = document.querySelectorAll('.hero-card');
+const buttons = document.querySelectorAll('.button-slider');
 const maxCount = cards.length-1;
 let currentSlide = 0;
 
 const setActiveCard = (index) => {
   cards.forEach((card) => card.classList.remove('hero-card--active'));
   cards[index].classList.add('hero-card--active');
+  buttons.forEach((button) => button.classList.remove('button-slider--active'));
+  buttons[index].classList.add('button-slider--active');
 }
 
 prev.setAttribute('disabled', '')
@@ -56,14 +61,30 @@ next.addEventListener('click', function () {
   setActiveCard(currentSlide);
 });
 
-//range slider
-var slider = document.querySelector('.range-bar');
+buttons.forEach((button, index) => {
+  button.addEventListener('click', function () {
+    currentSlide = index
+    setActiveCard(currentSlide)
+  })
+})
 
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    }
-});
+console.log(noUiSlider)
+
+
+
+
+
+
+
+
+// //range slider
+// var slider = document.querySelector('.range-bar');
+
+// noUiSlider.create(slider, {
+//     start: [20, 80],
+//     connect: true,
+//     range: {
+//         'min': 0,
+//         'max': 100
+//     }
+// });

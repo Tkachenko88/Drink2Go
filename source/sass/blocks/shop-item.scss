@@ -5,3 +5,9 @@
   padding-bottom: 20px;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .shop-item__link{
+   font-weight: 500;
+  }
+}

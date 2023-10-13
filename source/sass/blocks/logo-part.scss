@@ -1,0 +1,28 @@
+.logo-part{
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+   .logo-part--invisible{
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+   .logo-part--invisible{
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo-part{
+   display: none;
+
+   &--footer{
+    display: block;
+   }
+  }
+}

@@ -4,13 +4,22 @@
   position: relative;
 }
 
-.contacts::after{
-  content: "";
-  width: 320px;
-  height: 1px;
-  display: block;
-  background-color: $color-secondary;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media (min-width: $tablet-width) {
+  .contacts{
+    width: 223px;
+    padding: 0;
+  }
+ }
+
+ @media (max-width: $mobile-width-only) {
+  .contacts::after{
+    content: "";
+    width: 320px;
+    height: 1px;
+    display: block;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }

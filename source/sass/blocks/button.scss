@@ -26,3 +26,23 @@
    margin: 0;
 };
 }
+
+
+.button-slider{
+  width: 30px;
+  height: 5px;
+  background-color: red;
+  border: none;
+
+  &--active{
+    background-color: aqua;
+  }
+}
+
+.button-container{
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  z-index: 3;
+}
+

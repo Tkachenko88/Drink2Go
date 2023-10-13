@@ -1,0 +1,31 @@
+.logo{
+  padding: 22px 0 22px 40px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo{
+    padding: 12px 20px;
+  }
+}
+
+.logo__link{
+  text-decoration: none;
+  color: $color-black;
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    display: block;
+    width: 126px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 20px;
+    text-align: left;
+  }
+}

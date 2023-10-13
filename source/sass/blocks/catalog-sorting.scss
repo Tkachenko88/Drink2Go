@@ -15,3 +15,9 @@
   width: 165px;
   background-color: $background-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-sorting{
+    text-align: end;
+  }
+}

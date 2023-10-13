@@ -9,6 +9,17 @@
   padding: 0;
 }
 
+.user-nav__link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-nav__name{
+  display: none;
+
+}
+
 .user-nav__item{
   padding: 20px 22px;
 }
@@ -20,5 +31,17 @@
 
   .user-nav__item{
     padding: 28px 22px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .user-nav__name{
+    display: block;
+    padding-left: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
   }
 }

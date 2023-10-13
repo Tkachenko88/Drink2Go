@@ -1,14 +1,21 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+html{
+  height: 100%;
+}
+
 body {
   font-family: $font;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   width: 320px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   background-color: $color-white;
   min-height: 100%;
+  box-sizing: border-box;
 }
 
 ul{
@@ -28,6 +35,6 @@ fieldset{
 
 @media (min-width: $desktop-width) {
   body {
-    width: 1200px;
+    width: 1440px;
   }
 }

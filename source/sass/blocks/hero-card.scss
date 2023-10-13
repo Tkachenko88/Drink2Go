@@ -6,10 +6,11 @@
   padding: 20px 20px 0 20px;
   box-sizing: border-box;
   position: absolute;
+  display: none;
 
 
   &--active{
-    z-index: 2;
+    display: block;
   }
 
   &--latte{
@@ -93,5 +94,12 @@
 
   .hero-card__price{
     padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-card{
+   padding: 200px 80px 80px 735px;
+   text-align: left;
   }
 }

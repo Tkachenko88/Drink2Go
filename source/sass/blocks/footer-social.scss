@@ -5,17 +5,6 @@
   position: relative;
 }
 
-.footer-social::after{
-  content: "";
-  width: 320px;
-  height: 1px;
-  display: block;
-  background-color: $color-secondary;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .footer-social__list{
   display: flex;
   justify-content: space-between;
@@ -23,4 +12,23 @@
   margin: 0;
   padding: 0;
   padding-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social__item {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .footer-social::after{
+    content: "";
+    width: 320px;
+    height: 1px;
+    display: block;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }

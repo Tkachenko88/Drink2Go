@@ -2,6 +2,10 @@
     list-style-type: none;
 }
 
+.main-nav__close-button{
+  display: none;
+}
+
 .main-nav__toggle{
   cursor: pointer;
   z-index: 2;
@@ -10,6 +14,18 @@
   right: 13px;
   border: none;
   background-color: transparent;
+
+  &--closed{
+    .main-nav__menu{
+      display: none;
+    }
+
+    .main-nav__close-button{
+      display: block;
+    }
+  }
+
+
 }
 
 @media (min-width: $tablet-width) {
