@@ -8,7 +8,6 @@
   position: absolute;
   display: none;
 
-
   &--active{
     display: block;
   }
@@ -87,8 +86,6 @@
     background-color: $color-grey;
   }
 }
-
-
 
 @media (min-width: $tablet-width) {
   .hero-card__img{

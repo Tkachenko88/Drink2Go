@@ -7,13 +7,11 @@
   position: relative;
 }
 
-
 @media (max-width: $mobile-width-only) {
   .main-header__logo{
     padding: 12px 20px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .main-header{

@@ -10,9 +10,6 @@ navToggle.addEventListener("click", function () {
   navToggle.classList.toggle("main-nav__toggle--closed")
 });
 
-
-
-
 //hero-slider
 const prev = document.querySelector('.hero-slider__button--previous');
 const next = document.querySelector('.hero-slider__button--next');
@@ -68,7 +65,7 @@ buttons.forEach((button, index) => {
   })
 })
 
-
+//slider
 const slider = document.querySelector('.range');
 const inputMin = document.querySelector('.input-range--min');
 const inputMax = document.querySelector('.input-range--max');
