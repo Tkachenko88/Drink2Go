@@ -19,5 +19,11 @@
 @media (min-width: $tablet-width) {
   .catalog-sorting{
     text-align: end;
+    padding-right: 6px;
+  }
+
+  .catalog-sorting__select{
+    padding-left: 12px;
+
   }
 }

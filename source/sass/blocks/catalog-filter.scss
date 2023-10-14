@@ -26,12 +26,14 @@
 @media (min-width: $tablet-width) {
   .catalog-filter__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .catalog-filter__group{
     padding: 0;
+    min-width: 222px;
   }
 
   .catalog-filter__button{

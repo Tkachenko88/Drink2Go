@@ -9,6 +9,8 @@
     display: grid;
     grid-template-columns: repeat(2, 350px);
     justify-content: space-between;
-    gap: 20px;
+    row-gap: 31px;
+    margin-top: 30px;
+    margin-bottom: 73px;
   }
 }

@@ -22,6 +22,19 @@
 
 .user-nav__item{
   padding: 20px 22px;
+
+  &:hover,
+  &:focus{
+    color: $color-primary;
+
+    .enter-icon{
+      fill: $color-primary;
+    }
+  }
+
+  &:active{
+    background-color: $color-secondary;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -7,4 +7,9 @@
   &--active{
     background-color: $color-primary;
   }
+
+  :hover,
+  :focus{
+    background-color: $primary-opacity;
+  }
 }

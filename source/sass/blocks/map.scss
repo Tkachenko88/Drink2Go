@@ -19,12 +19,10 @@
   }
 
   .map__pin{
-    left: 118%;
+    left: 50%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .image {
-    width: 1440px;
+  .map{
+    margin-bottom: 20px;
   }
 }

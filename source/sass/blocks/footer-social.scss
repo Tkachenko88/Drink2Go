@@ -14,9 +14,17 @@
   padding-top: 8px;
 }
 
+.footer-social__item{
+  padding-left: 19px;
+}
+
 @media (min-width: $tablet-width) {
   .footer-social__item {
     padding-left: 20px;
+  }
+
+  .footer-social{
+    margin-bottom: 10px;
   }
 }
 

@@ -6,25 +6,50 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
+
+  &:hover,
+  &:focus{
+    background-color: $light-primary;
+    border: none;
+  }
+
+  &:active{
+    background-color: $primary-darker;
+  }
+
+  &:disabled{
+    background-color: $color-grey;
+  }
 }
 
-.button__submit{
+.button--submit{
   background-color: $color-primary;
   color: $color-white;
   margin-bottom: 19px
 };
 
-.button__reset{
+.button--reset{
   color: $color-primary;
   background-color: $color-white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled{
+    color: $color-white;;
+  }
+
+  &:disabled{
+    background-color: $light-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
 .button{
   width: 137px;
 }
-.button__submit{
+.button--submit{
    margin: 0;
 };
 }

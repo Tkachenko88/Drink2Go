@@ -14,3 +14,9 @@
   top: -6px;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .noUi-target {
+    margin-bottom: 16px;
+  }
+}

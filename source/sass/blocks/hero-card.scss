@@ -22,6 +22,10 @@
   }
 }
 
+.hero-card__transfer{
+  display: none;
+}
+
 .hero-card__wrapper{
   padding-bottom: 60px;
 }
@@ -68,6 +72,20 @@
   font-family: $font;
   width: 113px;
   padding: 8px 20px;
+
+  &:hover,
+  &:focus{
+    background-color: $light-primary;
+    border: none;
+  }
+
+  &:active{
+    background-color: $primary-darker;
+  }
+
+  &:disabled{
+    background-color: $color-grey;
+  }
 }
 
 
@@ -80,13 +98,18 @@
   }
 
   .hero-card{
-    padding: 60px 80px;
+    padding: 55px 80px;
 
   };
 
+  .hero-card__transfer{
+    display: block;
+  }
+
   .hero-card__name{
-    font-size: 56px;
-    line-height: 80px
+    font-size: 58px;
+    line-height: 80px;
+    margin-bottom: 18px;
   }
 
   .hero-card__description{

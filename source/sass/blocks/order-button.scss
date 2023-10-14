@@ -9,5 +9,19 @@
   padding: 8px 20px;
   font-family: $font;
   cursor: pointer;
+
+  &:hover,
+  &:focus{
+    background-color: $light-primary;
+    border: none;
+  }
+
+  &:active{
+    background-color: $primary-darker;
+  }
+
+  &:disabled{
+    background-color: $color-grey;
+  }
 }
 
