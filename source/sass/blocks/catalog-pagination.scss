@@ -8,6 +8,11 @@
 @media (min-width: $tablet-width) {
   .catalog-pagination{
     justify-content: flex-end;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .catalog-pagination{
+    margin-top: 347px;
   }
 }

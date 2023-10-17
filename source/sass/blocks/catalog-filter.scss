@@ -46,4 +46,18 @@
   .catalog-filter__wrapper{
     flex-direction: column;
   }
+
+  .catalog-filter{
+    position: relative;
+  }
+
+  .catalog-filter__button{
+    position: absolute;
+    bottom: 0px;
+    left: 29px;
+  }
+
+  .catalog-filter__group{
+    width: 320px;
+  }
 }

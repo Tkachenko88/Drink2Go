@@ -23,3 +23,10 @@
     left: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .shop{
+    min-width: 317px;
+    padding: 0;
+  }
+}

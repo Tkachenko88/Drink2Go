@@ -3,3 +3,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer{
+    width: 1440px;
+  }
+}

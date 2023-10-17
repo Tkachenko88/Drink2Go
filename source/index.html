@@ -16,6 +16,7 @@
             >rink</span
           >
           <img
+            class="logo__link-img"
             src="images/mobile/mobile-logo.svg"
             width="36"
             height="36"
@@ -181,6 +182,29 @@
             <div class="hero-card hero-card--active hero-card--flat">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    /images/desktop/flat_white_img.webp    1x,
+                    /images/desktop/flat_white_img@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    /images/tablet/flat_white_img.webp    1x,
+                    /images/tablet/flat_white_img@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/mobile/flat-white.webp   1x,
+                    /images/mobile/flat-white2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 1440px)"
                   srcset="
                     /images/desktop/flat_white_img.png    1x,
@@ -223,6 +247,29 @@
             <div class="hero-card hero-card--latte">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    /images/desktop/latte.webp    1x,
+                    /images/desktop/latte@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    /images/tablet/latte.webp    1x,
+                    /images/tablet/latte@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/mobile/lavender.webp   1x,
+                    /images/mobile/lavender2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 1440px)"
                   srcset="
                     /images/desktop/latte.png    1x,
@@ -260,6 +307,29 @@
             </div>
             <div class="hero-card hero-card--espresso">
               <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    /images/desktop/espresso_img.webp    1x,
+                    /images/desktop/espresso_img@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    /images/tablet/espresso.webp    1x,
+                    /images/tablet/espresso@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/mobile/espresso.webp   1x,
+                    /images/mobile/espresso2x.webp 2x
+                  "
+                />
                 <source
                   media="(min-width: 1440px)"
                   srcset="
@@ -702,29 +772,50 @@
         </ul>
         <ul class="catalog-pagination pagination">
           <li class="pagination-item">
-            <span class="visually-hidden">Предыдущий список</span>
-            <button
-              class="pagination-button pagination-button--previous"
-            ></button>
+            <a class="pagination-item__link" href="#">
+              <span class="pagination-item__text">Назад</span>
+            </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item__link">1</a>
+            <a class="pagination-item__link" href="#">1</a>
           </li>
           <li class="pagination-item pagination-item--current">
-            <a class="pagination-item__link">2</a>
+            <a class="pagination-item__link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-item__link">3</a>
+            <a class="pagination-item__link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <span class="visually-hidden">Следующий список</span>
-            <button class="pagination-button pagination-button--next"></button>
+            <a class="pagination-item__link" href="#">
+              <span class="pagination-item__text">Вперед</span>
+            </a>
           </li>
         </ul>
       </section>
       <section class="map" data-test="map">
         <h2 class="visually-hidden">Как добраться</h2>
         <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1440px)"
+            srcset="/images/desktop/map.webp 1x, /images/desktop/map@2x.webp 2x"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="
+              /images/tablet/map_bg.webp    1x,
+              /images/tablet/map_bg@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="/images/mobile/map.webp 1x, /images/mobile/map@2x.webp 2x"
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="/images/desktop/map.png 1x, /images/desktop/map@2x.png 2x"
+          />
           <source
             media="(min-width: 768px)"
             srcset="
@@ -771,160 +862,167 @@
       </section>
     </main>
     <footer class="footer" data-test="footer">
-      <section class="footer-social">
-        <div class="footer-logo logo">
-          <a class="logo__link" href="index.html">
-            <span class="logo-part logo-part--footer">d</span>
-            <span class="logo-part">rink</span>
-            <img
-              src="images/mobile/mobile-logo.svg"
-              width="36"
-              height="36"
-              alt="Логотип Drink2Go"
-            />
-            <span class="logo-part logo-part--footer">g</span>
-            <span class="logo-part">o</span>
-          </a>
+      <div class="footer-wrapper">
+        <section class="footer-social">
+          <div class="footer-logo logo">
+            <a class="logo__link footer-logo__link" href="index.html">
+              <div class="footer-logo__link-wrapper">
+                <span class="logo-part logo-part--footer">d</span>
+                <span class="logo-part">rink</span>
+                <img
+                  src="images/mobile/mobile-logo.svg"
+                  width="36"
+                  height="36"
+                  alt="Логотип Drink2Go"
+                />
+                <span class="logo-part logo-part--footer">g</span>
+                <span class="logo-part">o</span>
+              </div>
+              <span class="logo__text footer-logo__text">
+                Интернет-магазин кофейных напитков
+              </span>
+            </a>
+          </div>
+          <ul class="footer-social__list">
+            <li class="footer-social__item social">
+              <a class="social-link">
+                <svg
+                  class="social-link__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill="#BDBDBD"
+                    fill-rule="evenodd"
+                    d="M1.4 1.4C0 2.82 0 5.08 0 9.6v.8c0 4.53 0 6.79 1.4 8.2C2.82 20 5.08 20 9.6 20h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2C17.18 0 14.92 0 10.4 0h-.8C5.07 0 2.81 0 1.4 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3H8.75v5.77c-1.33-.33-3.02-1.95-3.1-5.77H3.39Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item social">
+              <a class="social-link">
+                <svg
+                  class="social-link__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  viewBox="0 0 22 22"
+                >
+                  <path
+                    fill="#BDBDBD"
+                    d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48A4.76 4.76 0 0 0 6 10.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88A11 11 0 1 0 11 0Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item social">
+              <a class="social-link">
+                <svg
+                  class="social-link__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill="#BDBDBD"
+                    fill-rule="evenodd"
+                    d="M1.4 1.4C0 2.81 0 5.07 0 9.6v.91c0 4.46 0 6.7 1.4 8.09C2.81 20 5.07 20 9.6 20h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09C17.19 0 14.93 0 10.4 0h-.91C5.03 0 2.79 0 1.4 1.4Zm8.62 8.8A3.03 3.03 0 1 0 10 4.13a3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72L7.1 14.35a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill="#BDBDBD"
+                    fill-rule="evenodd"
+                    d="M1.4 1.4C0 2.82 0 5.08 0 9.6v.8c0 4.53 0 6.79 1.4 8.2C2.82 20 5.08 20 9.6 20h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2C17.18 0 14.92 0 10.4 0h-.8C5.07 0 2.81 0 1.4 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3H8.75v5.77c-1.33-.33-3.02-1.95-3.1-5.77H3.39Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-container">
+          <section class="footer-shop-map shop">
+            <h4 class="shop-chapter">Интернет-магазин</h4>
+            <ul class="shop-list">
+              <li class="shop-item">
+                <a class="shop-item__link" href="#catalog"> Каталог </a>
+              </li>
+              <li class="shop-item">
+                <a class="shop-item__link"> доставка </a>
+              </li>
+              <li class="shop-item">
+                <a class="shop-item__link"> способы оплаты </a>
+              </li>
+              <li class="shop-item">
+                <a class="shop-item__link"> о нас </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-shop-map shop">
+            <h4 class="shop-chapter">Медиа</h4>
+            <ul class="shop-list">
+              <li class="shop-item">
+                <a class="shop-item__link"> блог </a>
+              </li>
+              <li class="shop-item">
+                <a class="shop-item__link"> Информация для СМИ </a>
+              </li>
+              <li class="shop-item">
+                <a class="shop-item__link"> Правовая информация </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contacts contacts">
+            <h4 class="contacts-chapter">Контакты</h4>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <p class="contacts-item__description">
+                  Санкт-Петербург, набережная реки Карповки, дом 5
+                </p>
+                <svg
+                  class="contacts-item__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 13 16"
+                >
+                  <path
+                    fill="#7859CF"
+                    fill-rule="evenodd"
+                    d="M11.8 6.5c0 2.33-1.37 4.42-2.91 6.01a17.54 17.54 0 0 1-2.39 2.05 16.93 16.93 0 0 1-2.39-2.05C2.57 10.91 1.2 8.83 1.2 6.5a5.3 5.3 0 1 1 10.6 0Zm1.2 0c0 5.59-6.5 9.5-6.5 9.5S0 12.09 0 6.5a6.5 6.5 0 0 1 13 0Zm-4.2 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0Zm1.2 0a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+              <li class="contacts-item">
+                <p class="contacts-item__description">+7 (999) 999-99-99</p>
+                <svg
+                  class="contacts-item__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 13 16"
+                >
+                  <path
+                    fill="#7859CF"
+                    fill-rule="evenodd"
+                    d="M1.48 1.49A2.7 2.7 0 0 0 .05 4.32L.4 6.09c.93 3.13 2.5 5.77 4.83 8.11l1.4 1.2c.86.72 2.17.8 3.24.2l2.23-1.25c.88-.49 1.17-1.53.63-2.26L10.8 9.5c-.52-.7-1.6-.82-2.37-.26l-1.38.99a5.23 5.23 0 0 1-2.17-3.67l1.56-.66c.9-.37 1.33-1.33.96-2.11L6.04.85C5.66.03 4.58-.25 3.7.25L1.48 1.48Zm-.2 2.53c-.12-.6.2-1.22.78-1.55L4.3 1.23c.22-.13.5-.06.59.15L6.24 4.3c.1.2-.02.43-.24.53L3.57 5.86l.02.42a6.28 6.28 0 0 0 3.07 5.16l.36.22 2.13-1.53c.2-.14.46-.11.59.06l1.93 2.61c.14.19.07.45-.15.57l-2.23 1.25c-.59.33-1.3.28-1.77-.12l-1.4-1.19A20.91 20.91 0 0 1 1.64 5.8l-.36-1.77Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </section>
         </div>
-        <ul class="footer-social__list">
-          <li class="footer-social__item social">
-            <a class="social-link">
-              <svg
-                class="social-link__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill="#BDBDBD"
-                  fill-rule="evenodd"
-                  d="M1.4 1.4C0 2.82 0 5.08 0 9.6v.8c0 4.53 0 6.79 1.4 8.2C2.82 20 5.08 20 9.6 20h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2C17.18 0 14.92 0 10.4 0h-.8C5.07 0 2.81 0 1.4 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3H8.75v5.77c-1.33-.33-3.02-1.95-3.1-5.77H3.39Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item social">
-            <a class="social-link">
-              <svg
-                class="social-link__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="none"
-                viewBox="0 0 22 22"
-              >
-                <path
-                  fill="#BDBDBD"
-                  d="M11 0a11 11 0 0 0-4 21.25c-.1-.87-.2-2.21.03-3.16l1.29-5.47s-.33-.66-.33-1.63c0-1.53.89-2.67 2-2.67.93 0 1.38.7 1.38 1.54 0 .95-.6 2.36-.9 3.67-.27 1.1.54 1.99 1.62 1.99 1.96 0 3.46-2.07 3.46-5.04 0-2.64-1.9-4.48-4.6-4.48A4.76 4.76 0 0 0 6 10.78c0 .94.36 1.96.82 2.5.09.12.1.21.07.32l-.3 1.25c-.05.2-.16.24-.37.15-1.38-.64-2.23-2.65-2.23-4.26 0-3.47 2.52-6.66 7.26-6.66 3.82 0 6.78 2.72 6.78 6.35 0 3.8-2.39 6.84-5.7 6.84-1.12 0-2.17-.58-2.52-1.26l-.69 2.62a12.3 12.3 0 0 1-1.37 2.88A11 11 0 1 0 11 0Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="footer-social__item social">
-            <a class="social-link">
-              <svg
-                class="social-link__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill="#BDBDBD"
-                  fill-rule="evenodd"
-                  d="M1.4 1.4C0 2.81 0 5.07 0 9.6v.91c0 4.46 0 6.7 1.4 8.09C2.81 20 5.07 20 9.6 20h.91c4.46 0 6.7 0 8.09-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.91c0-4.46 0-6.7-1.4-8.09C17.19 0 14.93 0 10.4 0h-.91C5.03 0 2.79 0 1.4 1.4Zm8.62 8.8A3.03 3.03 0 1 0 10 4.13a3.03 3.03 0 0 0 0 6.07Zm0-4.28a1.25 1.25 0 0 1 0 2.5c-.69 0-1.25-.56-1.25-1.25a1.23 1.23 0 0 1 1.25-1.25Zm1.21 6.76a5.73 5.73 0 0 0 1.76-.72.88.88 0 0 0 .28-1.24.88.88 0 0 0-1.24-.27 3.85 3.85 0 0 1-4.08 0 .9.9 0 0 0-1.23.27.9.9 0 0 0 .3 1.22 5.8 5.8 0 0 0 1.77.72L7.1 14.35a.89.89 0 0 0 0 1.25c.18.18.4.25.63.25.24 0 .46-.09.64-.25l1.67-1.67 1.67 1.67a.89.89 0 0 0 1.25-1.25l-1.73-1.67Z"
-                  clip-rule="evenodd"
-                />
-                <path
-                  fill="#BDBDBD"
-                  fill-rule="evenodd"
-                  d="M1.4 1.4C0 2.82 0 5.08 0 9.6v.8c0 4.53 0 6.79 1.4 8.2C2.82 20 5.08 20 9.6 20h.8c4.53 0 6.79 0 8.2-1.4 1.4-1.41 1.4-3.67 1.4-8.2v-.8c0-4.53 0-6.79-1.4-8.2C17.18 0 14.92 0 10.4 0h-.8C5.07 0 2.81 0 1.4 1.4Zm1.98 4.68c.1 5.2 2.7 8.33 7.26 8.33h.26v-2.98a4.11 4.11 0 0 1 3.45 2.98h2.37a6.58 6.58 0 0 0-3.43-4.18 6.35 6.35 0 0 0 2.93-4.15h-2.15c-.47 1.65-1.85 3.15-3.17 3.3v-3.3H8.75v5.77c-1.33-.33-3.02-1.95-3.1-5.77H3.39Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-container">
-        <section class="footer-shop-map shop">
-          <h4 class="shop-chapter">Интернет-магазин</h4>
-          <ul class="shop-list">
-            <li class="shop-item">
-              <a class="shop-item__link" href="#catalog"> Каталог </a>
-            </li>
-            <li class="shop-item">
-              <a class="shop-item__link"> доставка </a>
-            </li>
-            <li class="shop-item">
-              <a class="shop-item__link"> способы оплаты </a>
-            </li>
-            <li class="shop-item">
-              <a class="shop-item__link"> о нас </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-shop-map shop">
-          <h4 class="shop-chapter">Медиа</h4>
-          <ul class="shop-list">
-            <li class="shop-item">
-              <a class="shop-item__link"> блог </a>
-            </li>
-            <li class="shop-item">
-              <a class="shop-item__link"> Информация для СМИ </a>
-            </li>
-            <li class="shop-item">
-              <a class="shop-item__link"> Правовая информация </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-contacts contacts">
-          <h4 class="contacts-chapter">Контакты</h4>
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <p class="contacts-item__description">
-                Санкт-Петербург, набережная реки Карповки, дом 5
-              </p>
-              <svg
-                class="contacts-item__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="16"
-                fill="none"
-                viewBox="0 0 13 16"
-              >
-                <path
-                  fill="#7859CF"
-                  fill-rule="evenodd"
-                  d="M11.8 6.5c0 2.33-1.37 4.42-2.91 6.01a17.54 17.54 0 0 1-2.39 2.05 16.93 16.93 0 0 1-2.39-2.05C2.57 10.91 1.2 8.83 1.2 6.5a5.3 5.3 0 1 1 10.6 0Zm1.2 0c0 5.59-6.5 9.5-6.5 9.5S0 12.09 0 6.5a6.5 6.5 0 0 1 13 0Zm-4.2 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0Zm1.2 0a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </li>
-            <li class="contacts-item">
-              <p class="contacts-item__description">+7 (999) 999-99-99</p>
-              <svg
-                class="contacts-item__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="16"
-                fill="none"
-                viewBox="0 0 13 16"
-              >
-                <path
-                  fill="#7859CF"
-                  fill-rule="evenodd"
-                  d="M1.48 1.49A2.7 2.7 0 0 0 .05 4.32L.4 6.09c.93 3.13 2.5 5.77 4.83 8.11l1.4 1.2c.86.72 2.17.8 3.24.2l2.23-1.25c.88-.49 1.17-1.53.63-2.26L10.8 9.5c-.52-.7-1.6-.82-2.37-.26l-1.38.99a5.23 5.23 0 0 1-2.17-3.67l1.56-.66c.9-.37 1.33-1.33.96-2.11L6.04.85C5.66.03 4.58-.25 3.7.25L1.48 1.48Zm-.2 2.53c-.12-.6.2-1.22.78-1.55L4.3 1.23c.22-.13.5-.06.59.15L6.24 4.3c.1.2-.02.43-.24.53L3.57 5.86l.02.42a6.28 6.28 0 0 0 3.07 5.16l.36.22 2.13-1.53c.2-.14.46-.11.59.06l1.93 2.61c.14.19.07.45-.15.57l-2.23 1.25c-.59.33-1.3.28-1.77-.12l-1.4-1.19A20.91 20.91 0 0 1 1.64 5.8l-.36-1.77Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </li>
-          </ul>
-        </section>
       </div>
       <section class="footer-copyright copyright">
         <span class="copyright__text">Разработано в</span>

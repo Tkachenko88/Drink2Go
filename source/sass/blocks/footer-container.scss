@@ -4,3 +4,9 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-container{
+    margin-top: 9px;
+  }
+}

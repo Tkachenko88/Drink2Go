@@ -24,6 +24,13 @@
 
   .catalog-sorting__select{
     padding-left: 12px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .catalog-sorting{
+    position: absolute;
+    top: 224px;
+    right: 41px;
   }
 }
