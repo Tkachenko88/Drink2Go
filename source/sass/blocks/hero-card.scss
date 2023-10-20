@@ -126,7 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .hero-card{
-   padding: 200px 80px 80px 735px;
+   padding: 175px 80px 80px 735px;
    text-align: left;
   }
 
@@ -138,5 +138,9 @@
    .hero-card__wrapper{
     justify-content: left;
     padding-bottom: 0;
+  }
+
+  .hero-card__description{
+    margin-bottom: 40px;
   }
 }

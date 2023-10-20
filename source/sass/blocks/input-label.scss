@@ -21,3 +21,11 @@
      left: 106px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .input-label:first-child:after{
+    left: 156px;
+    top: 20px;
+ }
+}

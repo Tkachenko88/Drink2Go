@@ -45,16 +45,18 @@
 @media (min-width: $desktop-width) {
   .catalog-filter__wrapper{
     flex-direction: column;
+    margin-top: 46px;
   }
 
   .catalog-filter{
     position: relative;
+    padding-left: 18px;
   }
 
   .catalog-filter__button{
     position: absolute;
     bottom: 0px;
-    left: 29px;
+    left: 19px;
   }
 
   .catalog-filter__group{

@@ -87,3 +87,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list{
+    justify-content: space-between
+  }
+}
+

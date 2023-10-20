@@ -46,13 +46,23 @@
 }
 
 @media (min-width: $tablet-width) {
-.button{
-  width: 137px;
+  .button{
+    width: 137px;
+  }
+
+  .button--submit{
+    margin: 0;
+  };
 }
 
-.button--submit{
-   margin: 0;
-};
+@media (min-width: $desktop-width) {
+  .button--submit{
+     margin-right: 20px;
+  };
+
+  .button{
+    width: 149px;
+  }
 }
 
 

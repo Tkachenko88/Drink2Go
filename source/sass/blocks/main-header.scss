@@ -22,5 +22,11 @@
 @media (min-width: $desktop-width) {
   .main-header{
     width: 1440px;
+    align-items: center;
+    gap: 162px;
+  }
+
+  .main-header__nav{
+    min-width: 456px;
   }
 }

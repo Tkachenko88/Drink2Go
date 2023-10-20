@@ -22,7 +22,13 @@
     width: 87px;
   }
 
-.input-range--max{
+  .input-range--max{
   margin-left: 26px;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .input-range{
+    width: 135px;
+  }
 }

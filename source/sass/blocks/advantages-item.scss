@@ -68,7 +68,23 @@
   .advantages-item{
     padding: 0;
     padding-top: 60px;
-    background-position: 66% 10%;
+    background-position: 52% 0;
     width: 318px;
+
+    &--ecology{
+      background-position: 48% 0;
+    }
+
+    &--cheerfulness{
+      background-position: 50% 0;
+    }
   }
+
+  .advantages-item__title{
+    padding: 0;
+   }
+
+   .advantages-item__description {
+    padding: 0;
+   }
 }

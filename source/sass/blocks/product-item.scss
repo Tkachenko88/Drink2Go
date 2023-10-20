@@ -56,3 +56,9 @@
     min-width: 285px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-item__img{
+    padding-left: 75px;
+  }
+}
